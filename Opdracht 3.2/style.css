@@ -1,0 +1,100 @@
+.RequiredStar
+{
+    color: red;
+}
+#Collumn1
+{
+    width: 55%;
+}
+#Collumn2
+{
+    width: 53%;
+}
+#Collumn3
+{
+    width: 57.5%;
+}
+#Collumn4
+{
+    width: 55%;
+}
+body
+{
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; ;
+}
+form
+{
+    background-color: rgba(128,128,128,0.8);
+    
+    width: 45%;
+    height: 700px;
+    margin: auto;
+}
+table
+{  
+   margin: auto; 
+}
+h1
+{
+    text-align: center;
+    margin: auto;
+}
+#logoimg
+{
+    width: 15%;
+    margin-bottom: -110px;
+}
+#NumberInput
+{
+    width: 15%;
+}
+#StrtNumber
+{
+    margin-left: 130px;
+}
+#CityField
+{
+    width: 40%;
+}
+#PostcodeField
+{
+    width: 27%;
+}
+#CityCode
+{
+    margin-left: 130px;
+}
+#CountryField
+{
+    margin-left: 130px;
+}
+#VacationCountryField
+{
+    margin-left: -55px;
+}
+#StartDateLabel
+{
+    margin-left: -55px;
+}
+#EndDateLabel
+{
+    margin-left: -55px;
+}
+#TravellerLabel
+{
+    margin-left: -55px;
+}
+#AccountText
+{
+    text-align: center;
+}
+#EmailLabel
+{
+    margin-left: -10px;
+}
+#PasswordLabel
+{
+    margin-left: -10px;
+}

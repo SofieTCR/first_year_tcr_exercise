@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TUI Boeking</title>
+  </head>
+  <body>
+    <img src="/img/TUI-logo.png" alt="TUI-Logo" id="logoimg">
+    <form>
+      <br>
+      <br>
+      <h1>
+        Boek uw vakantie!
+      </h1>
+      <br>
+      <br>
+      <br>
+      <table id="Personal Info">
+        <tr>
+          <td id="Collumn1">
+            <label for="Fname">Voornaam:</label>
+          </td>
+          <td>
+            <input type="text" name="FName" placeholder="Klaas" required pattern="[a-zA-Z]*"/>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Mname">Tussenvoegsel: </label>
+          </td>
+          <td>
+            <input type="text" name="MName" pattern="[a-zA-Z]*"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Lname">Achternaam: </label>
+          </td>
+          <td>
+            <input type="text" name="LName" placeholder="Smit" required pattern="[a-zA-Z]*"/>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="BSN">BSN Nummer: </label>
+          </td>
+          <td>
+            <input type="text" name="BSN" placeholder="123456789" required pattern="[0-9]{9}"/>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+      </table>
+      <table id="GenderSelection">
+        <tr>
+          <td>
+            <label for="Male" class="RadioLabel">Man</label>
+          </td>
+          <td>
+            <input type="radio" name="Gender" value="M" id="Male" checked />
+          </td>
+          <td>
+            <label for="Female" class="RadioLabel">Vrouw</label>
+          </td>
+          <td>
+            <input type="radio" name="Gender" value="F" id="Female" />
+          </td>
+          <td>
+            <label for="Other" class="RadioLabel">Anders</label>
+          </td>
+          <td>
+            <input type="radio" name="Gender" value="O" id="Other" />
+          </td>
+          <td>
+            <label for="NA" class="RadioLabel" id="RadioLabelNA">Zeg ik liever niet</label>
+          </td>
+          <td>
+            <input type="radio" name="Gender" value="NA" id="NotSay" />
+          </td>
+          <td>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table id="AdressInput">
+        <tr>
+          <td id="Collumn2">
+            <label for="Straat" id="StrtNumber">Straat + Huisnummer: </label>
+          </td>
+          <td>
+            <input type="text" name="Street" placeholder="Jan Lighthartstraat" required pattern="[a-zA-Z ]*"/>
+            <input type="text" name="Number" placeholder="250A" required pattern="[a-zA-Z0-9]*" id="NumberInput"/>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="City" id="CityCode">Stad + Postcode: </label>
+          </td>
+          <td>
+            <input type="text" name="City" placeholder="Rotterdam" required pattern="[a-zA-Z ]*" id="CityField"/>
+            <input type="text" name="Postcode" placeholder="1234AB" required pattern="[0-9]{4}[a-zA-Z]{2}" id="PostcodeField"/>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Country" id="CountryField">Land: </label>
+          </td>
+          <td>
+            <select name="Country" id="Country">
+              <optgroup label="Europa">
+                <option value="NLD">Nederland</option>
+                <option value="BEL">Belgie</option>
+              </optgroup>
+            </select>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table id="Vacation Selection">
+        <tr>
+          <td id="Collumn3">
+            <label for="Country" id="VacationCountryField">Vakantie Land: </label>
+          </td>
+          <td>
+            <select name="Country" >
+              <optgroup label="Europa">
+                <option value="ESP">Spanje</option>
+                <option value="FRA">Frankrijk</option>
+                <option value="GRC">Griekenland</option>
+                <option value="CHE">Zwitserland</option>
+              </optgroup>
+              <optgroup label="Afrika">
+                <option value="KEN">Kenia</option>
+                <option value="EGY">Egypte</option>
+                <option value="MAR">Marroko</option>
+                <option value="ZAF">Zuid-Afrika</option>
+              </optgroup>
+            </select>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="StartDate" id="StartDateLabel">Vertrek Datum: </label>
+          </td>
+          <td>
+            <input type="date" name="StartDate" min="2022-09-16" required>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="StartDate" id="EndDateLabel">Terugkomst Datum: </label>
+          </td>
+          <td>
+            <input type="date" name="EndDate" min="2022-09-17" required>
+            <span class="RequiredStar">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="AmountTravellers" id="TravellerLabel">Aantal mede-reizegers: </label>
+          </td>
+          <td>
+            <select name="AmountTravellers" required>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table id="AccountCreation">
+        <h3 id="AccountText">Maak een account aan: </h3>
+        <tr>
+          <td id="Collumn4">
+            <label for="EmailField" id="EmailLabel">Uw Email: </label>
+          </td>
+          <td>
+            <input type="email" placeholder="email@email.nl">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="PasswordField" id="PasswordLabel">Uw Wachtwoord: </label>
+          </td>
+          <td>
+            <input type="password" placeholder="**************">
+          </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <table id="SubmitTable">
+        <tr>
+          <td>
+            <input type="submit" value="Nu Boeken" id="submitButton"/>
+          </td>
+        </tr>
+      </table>
+      <br>
+      
+    </form>
+  </body>
+</html>
