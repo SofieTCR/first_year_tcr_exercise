@@ -1,0 +1,39 @@
+.TopBar
+{
+    color: orange;
+}
+table
+{
+    border: 1px solid black;
+}
+td{
+    border-bottom: 1px solid black;
+}
+#t
+{
+    width: 50px;
+}
+.Stat
+{
+    width: 40px;
+}
+#Picture
+{
+    width: 40px;
+}
+#Team
+{
+    width: 220px;
+}
+p
+{
+    text-align: center;
+}
+#TeamID
+{
+    text-align: left;
+}
+img
+{
+    width: 40px;
+}
