@@ -1,0 +1,83 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+*/
+body {
+  background-color: black;
+  font-family: "Goldman", cursive;
+  background-image: url("/img/hacker.png");
+  background-repeat: no-repeat;
+  background-size: 100%; ;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;  
+}
+nav img {
+  width: 5vw;
+}
+body ul
+{
+  color: white;
+}
+body ol
+{
+  color: white;
+}
+footer p 
+{
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+footer 
+{
+  height: 28vh;
+  background-color: #00a8c7;
+}
+/* New Code */
+.tekst
+
+{
+font-size: 24px;  
+font-family: Verdana;
+list-style-type: circle;
+
+}
+
+.tekst2
+
+{
+font-size: 24px;  
+font-family: Verdana;
+}
